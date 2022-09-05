@@ -8,19 +8,23 @@ import {HttpClientModule} from '@angular/common/http';
 import { NewListComponent } from './pages/new-list/new-list.component';
 import {FormsModule} from '@angular/forms';
 import { UpdateListComponent } from './pages/update-list/update-list.component';
+import { LoginComponent } from './pages/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskviewComponent,
     NewListComponent,
-    UpdateListComponent
+    UpdateListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

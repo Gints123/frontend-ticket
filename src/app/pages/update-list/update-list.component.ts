@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from 'src/app/task.service';
-import { HttpClient } from '@angular/common/http';
+import { RequestService } from 'src/app/request.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
@@ -10,7 +9,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 })
 export class UpdateListComponent implements OnInit {
 
-  constructor(private taskService: TaskService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private taskService: RequestService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;

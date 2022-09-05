@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from 'src/app/task.service';
+import { RequestService } from 'src/app/request.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class NewListComponent implements OnInit {
 
-  constructor(private taskService: TaskService, private router: Router) { }
+  constructor(private taskService: RequestService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +26,7 @@ export class NewListComponent implements OnInit {
 
     });
 
-    await this.delay(50)
+    await this.delay(80)
     this.router.navigateByUrl('/ticket/getall');
   }
 }

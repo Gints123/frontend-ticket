@@ -1,0 +1,26 @@
+<div class="centered-content">
+    <div class="model-box">
+      <h1 class="title">
+        Izveidot jaunu pieprasījumu
+      </h1>
+      <form (ngSubmit)="userLogin()"  novalidate>
+        <div class="field">
+          <label class="label">Lietotājvārds</label>
+          <div class="control">
+            <input name="username" class="input" ngModel="user.username" placeholder="Ierakstiet savu lietotājvardu">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Parole</label>
+          <div class="control">
+            <input name="password" class="input" ngModel="user.password" placeholder="Parole">
+          </div>
+        </div>
+        <div class="create">
+          <button class="button is-primary has-text-white">Ielogoties</button>
+        </div>
+      </form>
+  
+  
+    </div>
+  </div>

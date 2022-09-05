@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { TaskService } from 'src/app/task.service';
+import { RequestService } from 'src/app/request.service';
 
 @Component({
   selector: 'app-taskview',
@@ -15,7 +15,7 @@ export class TaskviewComponent implements OnInit {
   request: any;
 
 
-  constructor(private taskSerivce: TaskService, private route: ActivatedRoute) { }
+  constructor(private taskSerivce: RequestService, private route: ActivatedRoute) { }
 
   ngOnInit() {
 

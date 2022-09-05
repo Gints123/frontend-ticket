@@ -2,18 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
 
-$turquoise: #44ddd0;
-$green: #27d7a1;
-$light-green: #45f69e;
-$dark-green: rgb(0,100,80);
+$darkred: #361d32;
+$brightred: #f55951;
+$darkpurple: #543c52;
+$is-primary: #543c52;
 
-$light: #f8f8f8;
+$light: #a5a1a1;
 
 //Update bulmas global variables
 
 $familty-sans-serif: "Nunito", sans-serif;
-$primary: $green;
-$link: $light-green;
+$primary: $darkred;
+$link: $darkpurple;
 
 //update bulmas component variables
 
@@ -24,12 +24,13 @@ $input-shadow: none;
 //custom global styles
 
 html {
-    background: linear-gradient(to right top, $turquoise, $green);
+    background: linear-gradient(to right top, $darkred, $brightred);
 }
 
 html, body{
     height: 100%;
 }
+
 
 .centered-content{
     display: flex;

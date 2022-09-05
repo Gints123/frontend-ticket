@@ -15,6 +15,7 @@
     padding: 42px;
     flex-direction: column;
     position: relative;
+    background-color: #fff !important;
 }
 
 .title{
@@ -23,7 +24,9 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #543c52 !important;
 }
+
 
 .list-menu{
     display: flex;
@@ -44,14 +47,20 @@
         }
 
         &.is-active{
-            background-color: #cff8ef;
-            color: $dark-green;
+            background-color: #676e6d;
+            color: $darkred;
         }
     }
 }
 
 .table{
     padding: 20px;
+    border-radius: 7px;
+    background-color: #fff !important;
+}
+
+.button{
+    background-color: $darkpurple !important;
 }
 
 .spacing{
@@ -67,7 +76,7 @@
     bottom: 0;
 }
 .task{
-    background: white;
+    background: rgb(182, 176, 176);
     padding: 15px 20px;
     border-radius: 5px;
     margin-top: 10px;
@@ -81,7 +90,7 @@
     }
 
     &:hover{
-        box-shadow: 0 0 0 5px #eee;
+        box-shadow: 0 0 0 10px rgb(85, 83, 83);
     }
     }
     &.complete{
