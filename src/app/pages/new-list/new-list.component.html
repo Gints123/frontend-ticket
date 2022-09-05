@@ -1,0 +1,57 @@
+<div class="centered-content">
+  <div class="model-box">
+    <h1 class="title">
+      Izveidot jaunu pieprasījumu
+    </h1>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <div class="field">
+        <label class="label">Pieprasa</label>
+        <div class="control">
+          <input name="requestedby" class="input" ngModel type="text" placeholder="Ierakstiet savu uzvārdu">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Iemesls</label>
+        <div class="control">
+          <input name="reason" class="input" ngModel type="text" placeholder="Saplisa dators">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Nepieciešamais aprīkojums</label>
+        <div class="control">
+          <input name="equipment" class="input" ngModel type="text" placeholder="Piemēram, monitors">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Parametri</label>
+        <div class="control">
+          <input name="parameters" class="input" ngModel type="text" placeholder="24 collas">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Status</label>
+        <div class="control">
+          <!-- <input name="status" class="input" ngModel type="text"> -->
+          <select name="status" id="status" ngModel type="text">
+            <option value="Gaida">Gaida</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Laiks</label>
+        <div class="control">
+          <input name="time" class="input" ngModel type="text" placeholder="03-09-2022">
+        </div>
+      </div>
+      <div class="create">
+        <button class="button is-primary has-text-white">Izveidot</button>
+      </div>
+    </form>
+
+    <div class="cancel">
+      <button routerLink="/ticket/getall" class="button">Atpakaļ</button>
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="centered-content">
+    <div class="task-manager-container">
+
+        <div class="tasks-list-container has-background-light">
+            <h1 class="title has-text-primary">
+                Pieprasījumi
+            </h1>
+
+            <div class="div-table">
+                <table class="table">
+                    <tr>
+                        <th class="spacing">id</th>
+                        <th class="spacing">Pieprasīja</th>
+                        <th class="spacing">Iemesls</th>
+                        <th class="spacing">Aprīkojums</th>
+                        <th class="spacing">Parametri</th>
+                        <th class="spacing">Statuss</th>
+                        <th class="spacing">Laiks, kad pievienots</th>
+                        <th class="spacing">Atjaunināt</th>
+                        <th class="spacing">Dzēst</th>
+                    </tr>
+
+                    <tr *ngFor="let list of lists">
+                        <td>{{ list.id}}</td>
+                        <td>{{ list.requestedby}}</td>
+                        <td>{{ list.reason}}</td>
+                        <td>{{ list.equipment}}</td>
+                        <td>{{ list.parameters}}</td>
+                        <td>{{ list.status}}</td>
+                        <td>{{ list.time}}</td>
+                        <td><button class="button is-success" [routerLink]="['/ticket', list.id]">Atjaunināt</button>
+                        </td>
+                        <td><button class="button is-danger" (click)="onDeleteTask(list.id)">Dzēst</button></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="options">
+                <button class="button is-primary has-text-white" routerLink="/new-ticket">+ Jauns Pieprasījums </button>
+            </div>
+
+        </div>
+    </div>
+</div>
